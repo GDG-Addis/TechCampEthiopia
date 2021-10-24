@@ -9,8 +9,8 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.jpg" type="image/x-icon">
 
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@300;400;600;700;900&display=swap"
@@ -31,9 +31,33 @@
 		<!-- Preloader -->
 		<div class="preloader"></div>
 
+	<!--
+		 Modal -->
+
+<div class="modal fade" id="coming_soon_registration_modal" tabindex="-1" role="dialog"  aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" >Registration</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  Next cohort(Robotics & IoT) registration will start soon. Stay tuned!
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!--End Modal 
+-->
+
 		<!-- Main Header-->
 		<header class="main-header header-style-one">
-
 
 
 			<!-- Header Upper -->
@@ -42,8 +66,10 @@
 					<div class="clearfix">
 
 						<div class="pull-left logo-box">
-							<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""
-										title="TechCamp"></a></div>
+							<!-- <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""
+										title="TechCamp"></a></div> -->
+							<a href="#">
+								<img src="images/TCE_final_logo_small.png" alt="" title="TechCamp"></a>
 						</div>
 
 						<div class="nav-outer clearfix">
@@ -63,46 +89,20 @@
 
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="current dropdown"><a href="#">Home</a>
 										</li>
-										<li class="dropdown"><a href="#">Tech Camps</a>
-											<ul>
-												<li><a href="cohort1.html">Cohort 1</a></li>
-												<li><a href="cohort2.html">Cohort 2</a></li>
-												<li><a href="cohort3.html">Cohort 3</a></li>
-												<li><a href="cohort4.html">Cohort 4</a></li>
-												<li><a href="cohort5.html">Cohort 5</a></li>
-												<li><a href="cohort6.html">Cohort 6</a></li>
-											</ul>
+										<li class="scroll-to-tech-camp scroll-to-programs" data-target="#techCamps">
+											Tech Camps
 										</li>
-										<li class="dropdown"><a href="#">Resources</a>
-											<ul>
-												<li><a href="books.html">Books</a></li>
-												<li><a href="books-detail.html">Book Detail</a></li>
-											</ul>
+										<li class="scroll-to-our-partners scroll-to-partners" data-target="#partners">
+											Partners
 										</li>
-										<li class="dropdown"><a href="#">Profiles</a>
-											<ul>
-												<li><a href="intro-profile.html">Instructor Profile</a></li>
-												<li><a href="student-profile.html">Student Profile</a></li>
-												<li><a href="edit-profile.html">Edit Profile</a></li>
-											</ul>
+										<li class="scroll-to-camp-schedules scroll-to-schedules"
+											data-target="#schedules">
+											Schedules
 										</li>
-										<li class="dropdown"><a href="#">Blog</a>
-											<ul>
-												<li><a href="blog.html">Blog</a></li>
-												<li><a href="blog-detail.html">Blog Detail</a></li>
-												<li><a href="error.html">Not Found / 404</a></li>
-											</ul>
+										<li class="scroll-to-about-us scroll-to-about" data-target="#about">
+											About Us
 										</li>
-										<li class="dropdown"><a href="#">Links</a>
-											<ul>
-												<li><a href="https://www.wikipedia.org">GDGAddis</a></li>
-												<li><a href="https://www.education.com">GDG Community</a></li>
-												<!-- <li><a href="https://www.theidioms.com">The Idioms</a></li> -->
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
 								</div>
 
@@ -121,7 +121,7 @@
 				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
 				<nav class="menu-box">
-					<div class="nav-logo"><a href="index.html"><img src="images/logo-5.png" alt="" title=""></a></div>
+
 					<div class="menu-outer">
 						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
 					</div>
@@ -140,18 +140,21 @@
 				<!-- Content Boxed -->
 				<div class="content-boxed">
 					<div class="inner-column">
-						<h1>Tech Camp Ethiopia <br> 2020</h1>
+						<h1>Tech Camp Ethiopia <br> 2021</h1>
 						<div class="buttons-box">
-							<a href="course.html" class="theme-btn btn-style-one"><span class="txt">Register <i
+							<a href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank" 
+								class="theme-btn btn-style-one"><span class="txt">Register <i
 										class="fa fa-angle-right"></i></span></a>
 						</div>
 					</div>
 				</div>
-
+					<!--data-toggle="modal" data-target="#coming_soon_registration_modal" -->
 				<!-- Image Boxed -->
 				<div class="image titlt" data-tilt="" data-tilt-max="4">
-					<a href="images/resource/banner.png" data-fancybox="banner" data-caption="" class=""><img
-							src="images/resource/banner.png" alt=""></a>
+					<a href="https://raw.githubusercontent.com/GDG-Addis/TechCampEthiopia/main/images/resource/banner.png"
+						data-fancybox="banner" data-caption="" class=""><img
+							src="https://raw.githubusercontent.com/GDG-Addis/TechCampEthiopia/main/images/resource/banner.png"
+							alt=""></a>
 				</div>
 
 				<!-- Search Boxed -->
@@ -164,7 +167,7 @@
 								</div>
 
 								<div class="time-counter">
-									<div class="time-countdown clearfix" data-countdown="2020/11/16"></div>
+									<div class="time-countdown clearfix" data-countdown="2021/11/1"></div>
 								</div>
 							</div>
 						</form>
@@ -175,9 +178,6 @@
 
 		</section>
 		<!-- End Banner Section -->
-
-
-
 
 		<!-- Education Section -->
 		<section class="education-section">
@@ -202,14 +202,16 @@
 					<!-- Content Column -->
 					<div class="content-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
-							<h2>Tech Camp Ethiopia 2020<br></h2>
+							<h3>#USInvestsInEthiopians</h3>
+							<h2>Tech Camp Ethiopia 2021<br></h2>
 							<div class="text">is a series of programs that encourage all of youths - makers, engineers,
 								do-gooders, executives, computer scientists, inventors, innovators - who are making
 								things that are not just nice to have, but that people need.<br><br>Each program is
 								involves
-								20 participants and takes a maximum of 8 days for one-to-one workshops, followed by
+								20|40 participants and takes a maximum of 8 days for one-to-one workshops, followed by
 								project-based challenges completed within a month.</div>
-							<a href="course.html" class="theme-btn btn-style-two"><span class="txt">Register <i
+							<a href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank"  
+								class="theme-btn btn-style-two"><span class="txt">Register <i
 										class="fa fa-angle-right"></i></span></a>
 						</div>
 					</div>
@@ -219,253 +221,256 @@
 		</section>
 		<!-- End Education Section -->
 
-		<!-- Courses Section -->
-		<section class="courses-section">
-			<div class="auto-container">
-				<!-- Title Column -->
+		<!-- Programs (Tech Camps) Section -->
+		<section class="courses-section" id="techCamps"></section>
+		<div class="auto-container">
+			<!-- Title Column -->
 
-				<div class="inner-column">
-					<!-- Sec Title -->
-					<div class="sec-title">
-						<h2 style="text-align: center;">The Programs</h2>
-						<div class="text" style="text-align: center;">Each program/cohort is designed to bring 20 young
-							ethusiatsts with
-							similar intersts and charachterstics.<br>For each cohort, we have the following topics
-							to cover in the Tech Camp</div>
-					</div>
-					<!-- <a href="course.html" class="theme-btn btn-style-three"><span class="txt">Get Stared <i
+			<div class="inner-column">
+				<!-- Sec Title -->
+				<div class="sec-title" style="margin-top: 100px;">
+					<h2 style="text-align: center;">The Programs</h2>
+					<div class="text" style="text-align: center;">Each program/cohort is designed to bring 20|40 young
+						ethusiatsts with
+						similar intersts and charachterstics.<br>For each cohort, we have the following topics
+						to cover in the Tech Camp</div>
+				</div>
+				<!-- <a href="course.html" class="theme-btn btn-style-three"><span class="txt">Get Stared <i
 							class="fa fa-angle-right"></i></span></a> -->
 
-				</div>
-				<div class="row clearfix">
-
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-1.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">Mobile App Cohort</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="course-detail.html" class="enroll">Enroll Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-2.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">Web Full-Stack Cohort</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="enroll">Coming Soon</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-3.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">Robotics & IoT Cohort</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="enroll">Coming Soon</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-4.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">AI/Machine Learning Cohort</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="enroll">Coming Soon</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-4.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">Game Development</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="enroll">Coming Soon</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Cource Block -->
-					<div class="cource-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="course-detail.html"><img src="images/resource/course-5.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<div class="clearfix">
-									<div class="pull-left">
-										<h5><a href="course-detail.html">Cloud Computing</a></h5>
-									</div>
-									<div class="pull-right">
-										<div class="price"></div>
-									</div>
-								</div>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="students">20 Participants</div>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="enroll">Coming Soon</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
 			</div>
+			<div class="row clearfix">
+
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12 ">
+					<div class="inner-box">
+						<div class="image">
+							<a href="cohort pages/cohort1-detail.html"><img
+									src="images/ConvertedWeb.jpg" alt=""></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>Mobile App Cohort</h5>
+								</div>
+								<div class="pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">
+
+								The Mobile App cohort is hands-on experiences in designing and building mobile
+								applications using Flutter.
+								<br><br>
+
+								By the end of the course, each participant will build their own complete Flutter
+								application incorporating most
+								of the key aspects of the Bootcamp materials. Participants are expected to build
+								real-world projects at the end
+								of this cohort
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">20 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a  href="cohort pages/cohort1-detail.html" class="enroll">Detail</a>
+									<!-- <button type="button" class="btn btn-lg btn-primary" disabled>Enroll Now</button> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="/cohort pages/cohort2-detail.html" ><img src="images/WebDev.jpg" alt=""></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>Web Full-Stack Cohort</h5>
+								</div>
+								<div class=" pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">This Cohort will allow participants to learn the fundamentals of modern
+								web development to
+								build great, full-fledged websites. You will learn how to build modern, in-demand
+								software that runs on any
+								browser flawlessly.
+								<br><br>At the end of this cohort, participants will be working on real-world projects
+								to solidify what they
+								have undertaken at the Full Stack Cohort.
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">40 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a href="/cohort pages/cohort2-detail.html" class="enroll">Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank" >
+								<img src="images/RoboticsDev.jpg" alt="">
+							</a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>Robotics & IoT Cohort</h5>
+								</div>
+								<div class=" pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">This cohort is here in order to empower the participants to be leaders of
+								their own learning
+								and understand the foundations of many of the advancements in robotics and
+								IoT.<br><br>Eventually, the participants will be able to have their final project done
+								professionally as the
+								cohort encompasses all the concepts that were provided during the program.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">40 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a  href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank" class="enroll">Register</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="images/pexels-laura-musikanski-6019019.png" alt="">
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>AI/Machine Learning Cohort</h5>
+								</div>
+								<div class=" pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">With this cohort, our experts will take participants, hands-to-hands in
+								the world of AI &
+								Machine Learning for a world-class experience full of detailed information and exciting
+								activities.
+								<br><br>In the end, participants are invited to apply what they learned on real-world
+								projects and observe their
+								fruitful learning curves within their projects</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">20 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a class="enroll">Coming Soon</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="images/game.png" alt="">
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>Game Development</h5>
+								</div>
+								<div class=" pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">By having industry professionals and Ethiopian game developer mentors and
+								instructors, our
+								cohort provides a full grasp on game development, where students are able to understand
+								the various elements
+								of game development.
+								<br><br>The final project will cover all of what was taught during the 32+ Hours
+								program, which participants
+								will be capable of developing stand-alone games.
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">20 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a class="enroll">Coming Soon</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="images/CloudDev.png" alt="">
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5>Cloud Computing</h5>
+								</div>
+								<div class=" pull-right">
+									<div class="price"></div>
+								</div>
+							</div>
+							<div class="text">Participants of this cohort will gain the fundamental understandings and
+								basic implementation
+								of cloud computing. Our cohort is to offer comprehensive and bundled material to
+								kick-start a career in cloud
+								computing.
+								<br><br>Toward the end of the cohort, participants will be working on a specific project
+								to sharpen their
+								skillsets and fully understand the basics of cloud computing.
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">20 Participants</div>
+								</div>
+								<div class="pull-right">
+									<a class="enroll">Coming Soon</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 		</section>
 		<!-- End Courses Section -->
 
 
-		<!--
-
-
-		Call To Action Section
-		<section class="call-to-action-section">
-			<div class="auto-container">
-				<div class="row clearfix">
-
-					Title Column
-					<div class="title-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-							Sec Title
-							<div class="sec-title">
-								<h2>Live the experience <br> learn at your own pace</h2>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters.</div>
-							</div>
-						</div>
-					</div>
-
-					Form Column
-					<div class="form-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<div class="help">For Help?</div>
-							<div class="search-box">
-								<form method="post" action="contact.html">
-									<div class="form-group">
-										<input type="search" name="search-field" value=""
-											placeholder="What do you want to learn?" required="">
-										<button type="submit"><span class="icon fa fa-search"></span></button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-					-->
-		<!-- End Call To Action Section -->
-
 		<!-- Video Section -->
-		<section class="video-section" style="background-image: url(images/background/2.jpg)">
+		<section class="video-section" style="background-image: url(images/devfestBG.JPG)">
 			<div class="auto-container">
-				<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span
+				<a href="https://www.youtube.com/watch?v=Gye8h4UQMT8" class="lightbox-image video-box"><span
 						class="fa fa-play"><i class="ripple"></i></span></a>
 				<h4>Watch Intro Video</h4>
 			</div>
@@ -473,12 +478,64 @@
 		<!-- End Video Section -->
 
 		<!-- Partners Section -->
-		<section class="achievements-section">
+		<section class="achievements-section" id="partners">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title centered">
+					<h2>Organized By</h2>
+
+				</div>
+
+				<!-- Fact Counter -->
+				<div class="fact-counter">
+					<div class="row clearfix d-flex justify-content-center">
+
+						<!-- Column -->
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<a target="_blank" href="https://et.usembassy.gov/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/USEmbassyEthiopia.jpg" /></span>
+										</div>
+										<h4 class="counter-title">US Embassy</h4>
+
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- Column -->
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+							<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<a target="_blank" href="https://www.gdgaddis.dev/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/gdg.png" /></span>
+										</div>
+										<h4 class="counter-title">GDG Addis</h4>
+
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Achievement Section -->
+		<!-- Partners Section -->
+		<section class="achievements-section" id="partners">
 			<div class="auto-container">
 				<!-- Sec Title -->
 				<div class="sec-title centered">
 					<h2>Our Partners</h2>
-					<div class="text">A very big thank you to all our partners for their continued partnership.<br>If
+					<div class="text">A very big thank you to all our partners for their continous partnership.<br>If
 						you’re interested in being showcased throughout GDG Addis, <a
 							href="mailto:contact@gdgaddis.com">contact@gdgaddis.com</a> to
 						discuss
@@ -487,52 +544,56 @@
 
 				<!-- Fact Counter -->
 				<div class="fact-counter">
-					<div class="row clearfix">
+					<div class="row clearfix d-flex justify-content-center">
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-course"></span>
-									</div>
-									<h4 class="counter-title">US Embassy</h4>
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="2000" data-stop="50">0</span>+
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-course-1"></span>
-									</div>
-									<h4 class="counter-title">CAWEE</h4>
-									<div class="count-outer count-box alternate">
-										<span class="count-text" data-speed="3000" data-stop="45">0</span>K+
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
 							<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-world"></span>
+								<a target="_blank" href="https://www.womentechmakers.com/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/wtm.png" /></span>
+										</div>
+										<h4 class="counter-title">WTM Addis</h4>
+
 									</div>
-									<h4 class="counter-title">GDG</h4>
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="4000" data-stop="115">0</span>
-									</div>
-								</div>
+								</a>
 							</div>
 						</div>
+
+						<!-- Column -->
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+							<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<a target="_blank" href="http://cawee-ethiopia.com/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/CAWEE-removebg-preview.png" /></span>
+										</div>
+										<h4 class="counter-title">CAWEE</h4>
+
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- Column -->
+
+						<!-- 
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+							<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<a target="_blank" href="https://shega.co/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/shega.png" /></span>
+										</div>
+										<h4 class="counter-title">Shega</h4>
+
+									</div>
+								</a>
+							</div>
+						</div> -->
 
 					</div>
 
@@ -540,63 +601,52 @@
 			</div>
 		</section>
 		<!-- End Achievement Section -->
-
-		<!-- Achievement Section -->
-		<section class="achievements-section">
+		<!-- Partners Section -->
+		<section class="achievements-section" id="partners">
 			<div class="auto-container">
 				<!-- Sec Title -->
 				<div class="sec-title centered">
-					<h2>Our achievements</h2>
-					<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re,
-						they’re <br> two waters own morning gathered greater shall had behold had seed.</div>
+					<h2>Our Sponsors</h2>
+					<div class="text">We are really grateful to all of our sponsors who are helping Tech Camp Ethiopia
+						to continue flourishing</div>
 				</div>
 
 				<!-- Fact Counter -->
 				<div class="fact-counter">
-					<div class="row clearfix">
+					<div class="row clearfix d-flex justify-content-center">
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-course"></span>
-									</div>
-									<h4 class="counter-title">Total Courses</h4>
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="2000" data-stop="50">0</span>+
-									</div>
-								</div>
-							</div>
-						</div>
+
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<!-- <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
 							<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-course-1"></span>
+								<a target="_blank" href="http://cawee-ethiopia.com/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/CAWEE-removebg-preview.png" /></span>
+										</div>
+										<h4 class="counter-title">CAWEE</h4>
+
 									</div>
-									<h4 class="counter-title">Total Student</h4>
-									<div class="count-outer count-box alternate">
-										<span class="count-text" data-speed="3000" data-stop="45">0</span>K+
-									</div>
-								</div>
+								</a>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+
+
+						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
 							<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="icon-box">
-										<span class="icon flaticon-world"></span>
+								<a target="_blank" href="https://www.gitbook.com/">
+									<div class="content">
+										<div class="icon-box">
+											<span><img src="./images/GitLogo2.png" /></span>
+										</div>
+										<h4 class="counter-title">Gitbook</h4>
+
 									</div>
-									<h4 class="counter-title">Global Position</h4>
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="4000" data-stop="115">0</span>
-									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 
@@ -607,16 +657,19 @@
 		</section>
 		<!-- End Achievement Section -->
 
-		<!-- Fluid Section One -->
-		<section class="fluid-section-one">
+
+
+
+		<!-- Schedules Section One -->
+		<section class="fluid-section-one" id="schedules">
 			<div class="patern-layer-one paroller" data-paroller-factor="0.60" data-paroller-factor-lg="0.20"
 				data-paroller-type="foreground" data-paroller-direction="vertical"
 				style="background-image: url(images/icons/icon-1.png)"></div>
 			<div class="outer-container clearfix">
 
 				<!-- Image Column -->
-				<div class="image-column" style="background-image:url(images/resource/image-1.jpg)">
-					<figure class="image-box"><img src="images/resource/image-1.jpg" alt=""></figure>
+				<div class="image-column" style="background-image:url(images/sceneDevFest.JPG)">
+					<figure class="image-box"><img src="/images/fullDevFestBG.JPG" alt=""></figure>
 				</div>
 
 				<!-- Content Column -->
@@ -627,7 +680,7 @@
 								<h2>Upcoming TechCamp Program</h2>
 							</div>
 							<div class="pull-right">
-								<a href="course-detail.html" class="events">All Cohorts</a>
+								<a href="#techCamps" class="events">All Cohorts</a>
 							</div>
 						</div>
 
@@ -639,13 +692,14 @@
 								<div class="inner-box">
 									<div class="clearfix">
 										<!-- Event Date -->
-										<div class="event-date clearfix"><span class="date">16</span>NOV 2020</div>
+										<div class="event-date clearfix"><span class="date">APR</span>2021</div>
 										<!-- Event List -->
 										<ul class="event-list">
-											<li><a href="course-detail.html">Mobile</a></li>
+											<li>Mobile</li>
 										</ul>
 									</div>
-									<h3><a href="course-detail.html">Mobile Application Cohort</a></h3>
+									<h3><a href="./cohort pages/cohort1-detail.html"  style="font-weight:400"	
+										>Mobile Application Cohort</a></h3>
 								</div>
 							</div>
 
@@ -654,13 +708,14 @@
 								<div class="inner-box">
 									<div class="clearfix">
 										<!-- Event Date -->
-										<div class="event-date clearfix"><span class="date">16</span>DEC 2020</div>
+										<div class="event-date clearfix"><span class="date">JUN</span>2021</div>
 										<!-- Event List -->
 										<ul class="event-list">
-											<li><a href="course-detail.html">Web</a></li>
+											<li>Web</li>
 										</ul>
 									</div>
-									<h3><a href="course-detail.html">Web Full-Stack Cohort</a></h3>
+									<h3>
+										<a href="./cohort pages/cohort2-detail.html" style="font-weight:400">Web Full-Stack Cohort</a></h3>
 								</div>
 							</div>
 
@@ -669,14 +724,14 @@
 								<div class="inner-box">
 									<div class="clearfix">
 										<!-- Event Date -->
-										<div class="event-date clearfix"><span class="date">16</span>JAN 2021</div>
+										<div class="event-date clearfix"><span class="date">Nov</span>2021</div>
 										<!-- Event List -->
 										<ul class="event-list">
-											<li><a href="course-detail.html">Robotics</a></li>
-											<li><a href="course-detail.html">IoT</a></li>
+											<li>Robotics</li>
+											<li>IoT</li>
 										</ul>
 									</div>
-									<h3><a href="course-detail.html">Robotics & IoT Cohort</a></h3>
+									<h3 id="about"> <a href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank" >Robotics & IoT Cohort</a></h3>
 								</div>
 
 							</div>
@@ -687,133 +742,146 @@
 				</div>
 		</section>
 
-		<!-- News Section -->
-		<section class="news-section">
-			<div class="auto-container">
-				<div class="row clearfix">
 
-					<!-- Title Column -->
-					<div class="title-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<!-- Sec Title -->
-							<div class="sec-title">
-								<h2>Our Latest blog posts</h2>
-								<div class="text">Learn more about the programs, how to register, what to expect, and
-									more..
-								</div>
-							</div>
-							<a href="course.html" class="theme-btn btn-style-three"><span class="txt">All Blog Post <i
-										class="fa fa-angle-right"></i></span></a>
-						</div>
-					</div>
+		<!-- ABOUT US Section -->
 
-					<!-- News Column -->
-					<div class="news-block col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a href="blog-detail.html"><img src="images/resource/news-1.jpg" alt=""></a>
-							</div>
-							<div class="lower-content">
-								<h3><a href="blog-detail.html">To apply signal detection theory</a></h3>
-								<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-									you’re, they’re two waters</div>
-								<a href="blog-detail.html" class="read-more">Continue Reading</a>
-							</div>
-						</div>
-					</div>
+		<section id="about" style="background-color: #f3f3f3;">
+
+			<div class="sec-title centered">
+				<h2 style="padding-top: 1em;">About Us</h2>
+				<div style="padding-top: 1em;" class="container text centered">
+
+
+					Google Developers Group (GDG) Addis is run by passionate
+					individuals in the
+					developer community.<br>
+					Join us for an opportunity to <i>meet</i> local developers with similar interests in technology,
+					<i>attend</i>
+					talks on a wide range of technical topics, and <i>learn</i> new skills through hands-on workshops
 
 				</div>
 			</div>
-		</section>
-		<!-- End News Section -->
 
-		<!-- Testimonial Section -->
-		<section class="testimonial-section">
-			<div class="auto-container">
-				<!-- Sec Title -->
+
+
+			<section class="container py-5">
+				<div class="row align-items-center mb-5">
+					<div class="col-lg-7 order-1 order-lg-1">
+						<h2 class="font-weight-light">Be part of an inclusive environment</h2>
+						<div class="text-muted mb-4">Everyone and
+							anyone interested in tech - from beginner developers to experienced professionals - are
+							welcome to join. We
+							are а group of enthusiasts that gather around Google technologies. Founded back in
+							<b>2016</b>,
+							we organize various
+							events - seminars, conferences or just community dine outs, and discuss the latest
+							Google developments and
+							Technology Trends. With over <b>60</b> events since then and over <b>3,000</b>
+							community members..
+						</div><a href="https://www.gdgaddis.dev" target="_blank" class="theme-btn btn-style-one">
+							<span class="txt">Learn
+								More</span></a>
+					</div>
+					<div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><a href="https://gdgaddis.dev"
+							target="_blank"> <img src="./images/gdgaddisLogo.png" alt=""
+								class="img-fluid mb-4 mb-lg-0"></a></div>
+				</div>
+
+			</section>
+
+			<!-- <div class="auto-container">
+			
 				<div class="sec-title centered">
-					<h2>Students & Parents Opinion</h2>
+					<h2>About Us</h2>
+					<div class="text">Google Developers Group (GDG) Addis is run by passionate individuals in the
+						developer community.
+						Join us for an opportunity to meet local developers with similar interests in technology, attend
+						talks on a
+						wide range of technical topics, and learn new skills through hands-on workshops.</div>
 				</div>
 
-				<!-- Authors Box -->
-				<div class="authors-box">
-					<div class="author-one"><img src="images/resource/author-2.jpg" alt=""></div>
-					<div class="author-two"><img src="images/resource/author-3.jpg" alt=""></div>
-					<div class="author-three"><img src="images/resource/author-4.jpg" alt=""></div>
-					<div class="author-four"><img src="images/resource/author-5.jpg" alt=""></div>
-
-					<div class="author-five"><img src="images/resource/author-6.jpg" alt=""></div>
-					<div class="author-six"><img src="images/resource/author-7.jpg" alt=""></div>
-					<div class="author-seven"><img src="images/resource/author-8.jpg" alt=""></div>
-					<div class="author-eight"><img src="images/resource/author-9.jpg" alt=""></div>
-				</div>
-
-				<div class="single-item-carousel owl-carousel owl-theme">
-
-					<!-- Testimonial Block Two -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<div class="quote-icon flaticon-quote-5"></div>
-								<div class="image">
-									<img src="images/resource/author-1.jpg" alt="">
-								</div>
-							</div>
-							<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-								you’re, they’re two waters own morning gathered greater shall had behold had seed.
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-								piece of classical Latin literature from 45 BC, making it</div>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/background/1.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./images/background/1.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./images/background/1.png" class="d-block w-100" alt="...">
 						</div>
 					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div> -->
 
-					<!-- Testimonial Block Two -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<div class="image">
-									<img src="images/resource/author-5.jpg" alt="">
-								</div>
-							</div>
-							<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-								you’re, they’re two waters own morning gathered greater shall had behold had seed.
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-								piece of classical Latin literature from 45 BC, making it</div>
+			<!-- <div class="card-deck" style="padding: 3rem">
+
+					<div class="card">
+						<img src="./images/background/1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">What Do We Do?</h5>
+							<p class="card-text">We provide the community developers with a space to get new ideas,
+								learn from industry
+								experts, engage with peers, use Google Technologies and other developer tools to foster
+								growth and build
+								technology ecosystem.
+							</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
-
-					<!-- Testimonial Block Two -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<div class="image">
-									<img src="images/resource/author-5.jpg" alt="">
-								</div>
-							</div>
-							<div class="text">Replenish him third creature and meat blessed void a fruit gathered
-								you’re, they’re two waters own morning gathered greater shall had behold had seed.
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-								piece of classical Latin literature from 45 BC, making it</div>
+					<div class="card">
+						<img src="./images/background/1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional
+								content.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
+					<div class="card">
+						<img src="./images/background/1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional
+								content. This card has even longer content than the first to show that equal height
+								action.
+							</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div> -->
 
-				</div>
-
-			</div>
 		</section>
-		<!-- End Testimonial Section -->
+
 
 		<!-- Call To Action Section Two -->
 		<section class="call-to-action-section-two" style="background-image: url(images/background/3.png)">
 			<div class="auto-container">
 				<div class="content">
-					<h2>Want to be part of Tech Camp Ethiopia 2020?</h2>
-					<div class="text">Register for the cohorts, and follow us on all social media platforms for news and
+					<h2>Want to be part of Tech Camp Ethiopia 2021?</h2>
+					<div class="text">Register for the cohorts, and follow us on all social media platforms for
+						news and
 						updates
 					</div>
 					<div class="buttons-box">
-						<a href="course.html" class="theme-btn btn-style-one"><span class="txt">Register <i
-									class="fa fa-angle-right"></i></span></a>
-						<a href="course.html" class="theme-btn btn-style-two"><span class="txt">All Cohorts<i
+						<a href="https://forms.gle/NtAPZ3XezfpwTWB36" target="_blank"  class="theme-btn btn-style-one"><span
+								class="txt">Register
+								<i class="fa fa-angle-right"></i></span></a>
+						<a href="#techCamps" class="theme-btn btn-style-ten"><span class="txt">All Cohorts<i
 									class="fa fa-angle-right"></i></span></a>
 					</div>
 				</div>
@@ -844,12 +912,16 @@
 								<div class="footer-column col-lg-7 col-md-6 col-sm-12">
 									<div class="footer-widget logo-widget">
 										<div class="logo">
-											<a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+											<a href="#"><img src="images/footerLogo.png" alt=""></a>
+
 										</div>
-										<div class="text">Tech Camp Ethiopia 2020
-											is a series of programs that encourage all of youths - makers, engineers,
+										<h6 style="margin-bottom: 20px;margin-top:25px ">#USInvestsInEthiopians</h6>
+										<div class="text">Tech Camp Ethiopia 2021
+											is a series of programs that encourage all of youths - makers,
+											engineers,
 											do-gooders, executives, computer
-											scientists, inventors, innovators - who are making things that are not just
+											scientists, inventors, innovators - who are making things that are
+											not just
 											nice to have, but that people
 											need.</div>
 										<div class="social-box">
@@ -869,36 +941,26 @@
 								</div>
 
 								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h4>About Us</h4>
-										<ul class="links-widget">
-											<li><a href="#">Afficiates</a></li>
-											<li><a href="#">Partners</a></li>
-											<li><a href="#">Reviews</a></li>
-											<li><a href="#">Blogs</a></li>
-											<li><a href="#">Newsletter</a></li>
-										</ul>
-									</div>
-								</div>
+
 
 							</div>
 						</div>
 
-						<!-- Big Column -->
 						<div class="big-column col-lg-6 col-md-12 col-sm-12">
 							<div class="row clearfix">
 
 								<!--Footer Column-->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget links-widget">
-										<h4>Resource</h4>
+
+										<h4>Quick Links</h4>
 										<ul class="links-widget">
-											<li><a href="privacy.html">Privacy Policy</a></li>
-											<li><a href="#">Support Area</a></li>
-											<li><a href="#">Documentations</a></li>
-											<li><a href="#">How it works</a></li>
-											<li><a href="guidlines.html">Community Guidelines</a></li>
+
+											<!-- class="scroll-to-tech-camp scroll-to-programs" data-target="#techCamps" -->
+											<li><a href="#techCamps">Tech Camps</a></li>
+											<li><a href="#partners">Partners</a></li>
+											<li><a href="#schedules">Schedules</a></li>
+											<li><a href="#about">About Us</a></li>
 										</ul>
 									</div>
 								</div>
@@ -906,19 +968,25 @@
 								<!--Footer Column-->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget links-widget">
-										<h4>Quick Links</h4>
+
+										<!-- class="scroll-to-tech-camp scroll-to-programs" data-target="#techCamps" -->
+										<h4>External Links</h4>
 										<ul class="links-widget">
-											<li><a href="#">home</a></li>
-											<li><a href="#">About us</a></li>
-											<li><a href="#">Features</a></li>
-											<li><a href="#">Pricing</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a target="_blank" href="https://bit.ly/2ZbxP8N">Code of Conduct</a>
+											</li>
+											<li><a target="_blank" href="https://bit.ly/2KTPLvS">Terms & Services</a>
+											</li>
+											<li><a target="_blank" href="https://www.gdgaddis.dev/contact">Contact
+													Us</a></li>
+
+										</ul>
 										</ul>
 									</div>
 								</div>
 
 							</div>
 						</div>
+						<!-- Big Column -->
 
 					</div>
 				</div>
@@ -930,27 +998,44 @@
 	<!--End pagewrapper-->
 
 	<!--Scroll to top-->
-	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span>
+	</div>
 
-	<script src="js/jquery.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-	<script src="js/appear.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/element-in-view.js"></script>
-	<script src="js/jquery.paroller.min.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/tilt.jquery.min.js"></script>
+	<script defer src="js/jquery.js"></script>
+	<script defer src="js/popper.min.js"></script>
+	<script defer src="js/jquery.scrollTo.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script defer src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script defer src="js/jquery.fancybox.js"></script>
+	<script defer src="js/appear.js"></script>
+	<script defer src="js/jquery.countdown.js"></script>
+	<script defer src="js/swiper.min.js"></script>
+	<script defer src="js/element-in-view.js"></script>
+	<script defer src="js/jquery.paroller.min.js"></script>
+	<script defer src="js/parallax.min.js"></script>
+	<script defer src="js/tilt.jquery.min.js"></script>
 	<!--Master Slider-->
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/owl.js"></script>
-	<script src="js/wow.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/script.js"></script>
+	<script defer src="js/jquery.easing.min.js"></script>
+	<script defer src="js/owl.js"></script>
+	<script defer src="js/wow.js"></script>
+	<script defer src="js/jquery-ui.js"></script>
+	<script defer src="js/script.js"></script>
+
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {},
+			Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"),
+				s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5fcbb1cb920fc91564cdcb6c/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 
 
 </body>
